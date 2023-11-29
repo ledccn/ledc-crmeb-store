@@ -28,5 +28,5 @@ class EbStoreProductAttrResult extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

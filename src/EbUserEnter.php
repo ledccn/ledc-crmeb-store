@@ -13,7 +13,7 @@ use think\Model;
  * @property string $district 商户所在区
  * @property string $address 商户详细地址
  * @property string $merchant_name 商户名称
- * @property string $link_user 
+ * @property string $link_user
  * @property string $link_tel 商户电话
  * @property string $charter 商户证书
  * @property integer $add_time 添加时间
@@ -41,5 +41,5 @@ class EbUserEnter extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

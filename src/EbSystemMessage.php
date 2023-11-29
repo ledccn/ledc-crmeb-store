@@ -32,5 +32,5 @@ class EbSystemMessage extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

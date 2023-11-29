@@ -19,7 +19,7 @@ use think\Model;
  * @property integer $people 拼图总人数
  * @property string $price 拼团商品单价
  * @property string $add_time 开始时间
- * @property string $stop_time 
+ * @property string $stop_time
  * @property integer $k_id 团长id 0为团长
  * @property integer $is_tpl 是否发送模板消息0未发送1已发送
  * @property integer $is_refund 是否退款 0未退款 1已退款
@@ -42,5 +42,5 @@ class EbStorePink extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

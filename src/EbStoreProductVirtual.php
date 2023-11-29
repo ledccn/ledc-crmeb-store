@@ -33,5 +33,5 @@ class EbStoreProductVirtual extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

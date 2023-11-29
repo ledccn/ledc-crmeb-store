@@ -30,5 +30,5 @@ class EbWechatMedia extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

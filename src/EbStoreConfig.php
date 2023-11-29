@@ -29,5 +29,5 @@ class EbStoreConfig extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

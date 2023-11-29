@@ -65,7 +65,7 @@ use think\Model;
  * @property mixed $unique 唯一id(md5加密)类似id
  * @property string $remark 管理员备注
  * @property integer $mer_id 商户ID
- * @property integer $is_mer_check 
+ * @property integer $is_mer_check
  * @property integer $pink_id 拼团id 0没有拼团
  * @property string $cost 成本价
  * @property string $verify_code 核销码
@@ -104,5 +104,5 @@ class EbStoreOrder extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

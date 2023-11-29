@@ -29,5 +29,5 @@ class EbUserSign extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

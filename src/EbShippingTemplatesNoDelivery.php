@@ -10,7 +10,7 @@ use think\Model;
  * @property integer $province_id 省ID
  * @property integer $temp_id 模板ID
  * @property integer $city_id 城市ID
- * @property string $value 
+ * @property string $value
  * @property string $uniqid 分组唯一值
  */
 class EbShippingTemplatesNoDelivery extends Model
@@ -29,5 +29,5 @@ class EbShippingTemplatesNoDelivery extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

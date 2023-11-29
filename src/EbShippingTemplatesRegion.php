@@ -15,7 +15,7 @@ use think\Model;
  * @property string $continue 续件
  * @property string $continue_price 续件运费
  * @property integer $group 计费方式1按件数,2按重量, 3按体积
- * @property string $value 
+ * @property string $value
  * @property string $uniqid 分组唯一值
  */
 class EbShippingTemplatesRegion extends Model
@@ -34,5 +34,5 @@ class EbShippingTemplatesRegion extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

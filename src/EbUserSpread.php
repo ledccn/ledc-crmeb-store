@@ -30,5 +30,5 @@ class EbUserSpread extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

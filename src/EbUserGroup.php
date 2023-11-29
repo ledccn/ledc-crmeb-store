@@ -25,5 +25,5 @@ class EbUserGroup extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -46,5 +46,5 @@ class EbStoreProductReply extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

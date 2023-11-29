@@ -25,5 +25,5 @@ class EbWorkGroupMsgRelation extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

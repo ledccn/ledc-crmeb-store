@@ -36,5 +36,5 @@ class EbUserBill extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

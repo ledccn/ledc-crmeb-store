@@ -34,5 +34,5 @@ class EbStoreNewcomer extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

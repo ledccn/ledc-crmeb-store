@@ -26,5 +26,5 @@ class EbWechatKey extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

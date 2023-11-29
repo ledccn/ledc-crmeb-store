@@ -39,5 +39,5 @@ class EbUserAddress extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

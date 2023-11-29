@@ -26,5 +26,5 @@ class EbStoreCouponIssueUser extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

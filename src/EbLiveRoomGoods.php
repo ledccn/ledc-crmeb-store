@@ -6,7 +6,7 @@ use think\Model;
 
 /**
  * eb_live_room_goods 直播间导入商品表
- * @property integer $live_room_id 
+ * @property integer $live_room_id
  * @property integer $live_goods_id
  */
 class EbLiveRoomGoods extends Model
@@ -25,5 +25,5 @@ class EbLiveRoomGoods extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

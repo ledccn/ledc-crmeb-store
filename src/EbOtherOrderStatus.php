@@ -28,5 +28,5 @@ class EbOtherOrderStatus extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -28,5 +28,5 @@ class EbWechatMessage extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

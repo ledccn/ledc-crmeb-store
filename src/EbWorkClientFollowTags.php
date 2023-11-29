@@ -29,5 +29,5 @@ class EbWorkClientFollowTags extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

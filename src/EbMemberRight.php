@@ -33,5 +33,5 @@ class EbMemberRight extends Model
      */
     protected $pk = 'right_type';
 
-    
+
 }

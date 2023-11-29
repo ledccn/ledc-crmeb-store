@@ -38,5 +38,5 @@ class EbSupplierTransactions extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -31,5 +31,5 @@ class EbStoreProductStockRecord extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

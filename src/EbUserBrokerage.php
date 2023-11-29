@@ -36,5 +36,5 @@ class EbUserBrokerage extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

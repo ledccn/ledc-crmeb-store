@@ -37,5 +37,5 @@ class EbUserCard extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

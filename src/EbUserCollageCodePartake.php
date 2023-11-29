@@ -35,5 +35,5 @@ class EbUserCollageCodePartake extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

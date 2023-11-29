@@ -31,5 +31,5 @@ class EbStoreProductUnit extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

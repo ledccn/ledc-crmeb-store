@@ -20,7 +20,7 @@ use think\Model;
  * @property string $welcome_words 群发内容
  * @property string $fail_external_userid 发送失败的客户userid
  * @property string $fail_message 发送失败原因
- * @property integer $create_time 
+ * @property integer $create_time
  * @property integer $update_time
  */
 class EbWorkGroupTemplate extends Model
@@ -39,5 +39,5 @@ class EbWorkGroupTemplate extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

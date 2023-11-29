@@ -17,7 +17,7 @@ use think\Model;
  * @property integer $sort 排序
  * @property string $qrcode 二维码图路径
  * @property string $remark 备注
- * @property integer $add_time 
+ * @property integer $add_time
  * @property integer $update_time
  */
 class EbMemberCardBatch extends Model
@@ -36,5 +36,5 @@ class EbMemberCardBatch extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

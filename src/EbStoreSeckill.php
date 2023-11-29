@@ -69,5 +69,5 @@ class EbStoreSeckill extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

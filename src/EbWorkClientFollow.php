@@ -37,5 +37,5 @@ class EbWorkClientFollow extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

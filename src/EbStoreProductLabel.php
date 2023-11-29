@@ -30,5 +30,5 @@ class EbStoreProductLabel extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

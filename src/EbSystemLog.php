@@ -34,5 +34,5 @@ class EbSystemLog extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

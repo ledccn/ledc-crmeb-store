@@ -31,5 +31,5 @@ class EbQueueAuxiliary extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

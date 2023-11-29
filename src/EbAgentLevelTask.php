@@ -34,5 +34,5 @@ class EbAgentLevelTask extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

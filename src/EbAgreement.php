@@ -30,5 +30,5 @@ class EbAgreement extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

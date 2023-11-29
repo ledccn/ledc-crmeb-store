@@ -41,5 +41,5 @@ class EbWorkChannelCode extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

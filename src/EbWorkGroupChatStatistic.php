@@ -31,5 +31,5 @@ class EbWorkGroupChatStatistic extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

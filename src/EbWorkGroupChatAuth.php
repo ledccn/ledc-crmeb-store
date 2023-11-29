@@ -35,5 +35,5 @@ class EbWorkGroupChatAuth extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

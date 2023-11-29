@@ -27,5 +27,5 @@ class EbStoreIntegralOrderStatus extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

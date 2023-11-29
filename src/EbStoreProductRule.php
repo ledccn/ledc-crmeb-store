@@ -28,5 +28,5 @@ class EbStoreProductRule extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

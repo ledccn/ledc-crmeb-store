@@ -18,10 +18,10 @@ use think\Model;
  * @property string $position 外部联系人的职位
  * @property string $corp_name 外部联系人所在企业的简称
  * @property string $corp_full_name 外部联系人所在企业的主体名称
- * @property string $external_profile 
+ * @property string $external_profile
  * @property string $remark 备注信息
- * @property integer $create_time 
- * @property integer $update_time 
+ * @property integer $create_time
+ * @property integer $update_time
  * @property integer $delete_time 删除时间戳
  */
 class EbWorkClient extends Model
@@ -40,5 +40,5 @@ class EbWorkClient extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

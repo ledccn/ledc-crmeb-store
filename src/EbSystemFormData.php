@@ -31,5 +31,5 @@ class EbSystemFormData extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

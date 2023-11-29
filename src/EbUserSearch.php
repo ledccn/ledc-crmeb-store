@@ -31,5 +31,5 @@ class EbUserSearch extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -10,7 +10,7 @@ use think\Model;
  * @property integer $type 商品所属：0：平台1:门店2:供应商
  * @property integer $relation_id 关联门店、供应商ID
  * @property integer $oid 订单ID
- * @property integer $uid 
+ * @property integer $uid
  * @property integer $station_type 平台类型
  * @property string $order_id 订单ID
  * @property string $delivery_no 配送方订单号
@@ -21,10 +21,10 @@ use think\Model;
  * @property string $receiver_phone 收货人电话
  * @property string $from_address 起始位置
  * @property string $to_address 结束位置
- * @property string $from_lat 
- * @property string $from_lng 
- * @property string $to_lat 
- * @property string $to_lng 
+ * @property string $from_lat
+ * @property string $from_lng
+ * @property string $to_lat
+ * @property string $to_lng
  * @property float $distance 配送距离
  * @property string $fee 配送费
  * @property string $deduct_fee 取消订单违约金
@@ -50,5 +50,5 @@ class EbStoreDeliveryOrder extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

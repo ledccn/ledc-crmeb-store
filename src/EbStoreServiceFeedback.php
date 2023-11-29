@@ -31,5 +31,5 @@ class EbStoreServiceFeedback extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

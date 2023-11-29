@@ -11,7 +11,7 @@ use think\Model;
  * @property integer $relation_id 发布视频门店ID、用户UID
  * @property integer $pid 上级回复id
  * @property integer $video_id 视频id
- * @property integer $uid 
+ * @property integer $uid
  * @property string $nickname 用户名称
  * @property string $avatar 用户头像
  * @property integer $like_num 点赞数量
@@ -39,5 +39,5 @@ class EbVideoComment extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

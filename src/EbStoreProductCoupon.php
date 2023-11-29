@@ -28,5 +28,5 @@ class EbStoreProductCoupon extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

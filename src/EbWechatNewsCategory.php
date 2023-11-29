@@ -29,5 +29,5 @@ class EbWechatNewsCategory extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -30,5 +30,5 @@ class EbSupplierTicketPrint extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

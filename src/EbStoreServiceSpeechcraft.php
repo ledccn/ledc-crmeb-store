@@ -30,5 +30,5 @@ class EbStoreServiceSpeechcraft extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -50,5 +50,5 @@ class EbSystemStoreStaff extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -25,5 +25,5 @@ class EbArticleContent extends Model
      */
     protected $pk = 'nid';
 
-    
+
 }

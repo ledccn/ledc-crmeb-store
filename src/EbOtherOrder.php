@@ -10,19 +10,19 @@ use think\Model;
  * @property integer $store_id 门店id
  * @property integer $staff_id 店员ID
  * @property integer $uid 用户uid
- * @property integer $type 区别 
-0：免费领取
-1：购买会员卡 
-2：卡密领取会员卡 
-3：收银订单 
-4：管理员赠送
+ * @property integer $type 区别
+ * 0：免费领取
+ * 1：购买会员卡
+ * 2：卡密领取会员卡
+ * 3：收银订单
+ * 4：管理员赠送
  * @property string $order_id 订单号
- * @property string $member_type 会员类型 
-月卡：month
-季卡：quarter
-年卡：year
-永久：ever
-免费：free
+ * @property string $member_type 会员类型
+ * 月卡：month
+ * 季卡：quarter
+ * 年卡：year
+ * 永久：ever
+ * 免费：free
  * @property string $code 卡号
  * @property string $pay_type 支付方式
  * @property integer $paid 支付状态 0:  未支付 1：已支付
@@ -56,5 +56,5 @@ class EbOtherOrder extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

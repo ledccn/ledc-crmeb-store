@@ -43,5 +43,5 @@ class EbWechatCard extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

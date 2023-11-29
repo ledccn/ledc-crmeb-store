@@ -13,7 +13,7 @@ use think\Model;
  * @property integer $use_uid 使用用户
  * @property integer $use_time 使用时间
  * @property integer $status 卡状态：0：冻结；1：激活
- * @property integer $add_time 
+ * @property integer $add_time
  * @property integer $update_time
  */
 class EbMemberCard extends Model
@@ -32,5 +32,5 @@ class EbMemberCard extends Model
      */
     protected $pk = 'card_batch_id';
 
-    
+
 }

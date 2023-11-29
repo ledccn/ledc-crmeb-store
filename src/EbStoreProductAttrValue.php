@@ -53,5 +53,5 @@ class EbStoreProductAttrValue extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

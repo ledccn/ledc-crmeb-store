@@ -29,5 +29,5 @@ class EbSystemGroup extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

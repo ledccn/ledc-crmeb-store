@@ -31,5 +31,5 @@ class EbUserVisit extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

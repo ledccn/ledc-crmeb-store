@@ -31,5 +31,5 @@ class EbLiveAnchor extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

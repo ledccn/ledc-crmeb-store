@@ -32,5 +32,5 @@ class EbSystemNoticeAdmin extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

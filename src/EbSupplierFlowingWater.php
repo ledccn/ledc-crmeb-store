@@ -39,5 +39,5 @@ class EbSupplierFlowingWater extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

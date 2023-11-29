@@ -47,5 +47,5 @@ class EbDiy extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -27,5 +27,5 @@ class EbUserNoticeSee extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

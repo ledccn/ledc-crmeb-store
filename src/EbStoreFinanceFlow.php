@@ -15,7 +15,7 @@ use think\Model;
  * @property integer $pm 0 = 支出 1 = 获得
  * @property string $number 明细
  * @property string $type 交易类型(1:支付订单,2,门店订单,3,订单手续费,4:退款订单,5:充值返点,6:付费会员返点,7:充值订单,8:付费订单,9:收银订单
-)
+ * )
  * @property string $pay_type 支付方式
  * @property string $pay_price 实际支付金额
  * @property string $total_price 订单总金额
@@ -43,5 +43,5 @@ class EbStoreFinanceFlow extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

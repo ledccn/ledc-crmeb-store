@@ -29,5 +29,5 @@ class EbWorkGroupMsgTask extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -13,7 +13,7 @@ use think\Model;
  * @property string $coupon_price 优惠券的面值
  * @property string $use_min_price 最低消费多少金额可用优惠券
  * @property integer $add_time 优惠券创建时间
- * @property integer $start_time 
+ * @property integer $start_time
  * @property integer $end_time 优惠券结束时间
  * @property integer $use_time 使用时间
  * @property string $type 获取方式
@@ -36,5 +36,5 @@ class EbStoreCouponUser extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

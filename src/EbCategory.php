@@ -34,5 +34,5 @@ class EbCategory extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

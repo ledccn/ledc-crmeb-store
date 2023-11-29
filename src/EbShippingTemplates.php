@@ -32,5 +32,5 @@ class EbShippingTemplates extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

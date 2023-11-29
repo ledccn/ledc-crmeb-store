@@ -35,5 +35,5 @@ class EbCapitalFlow extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

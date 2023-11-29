@@ -33,5 +33,5 @@ class EbWorkDepartment extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -47,5 +47,5 @@ class EbStoreOrderInvoice extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

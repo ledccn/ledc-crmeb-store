@@ -34,5 +34,5 @@ class EbQrcode extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

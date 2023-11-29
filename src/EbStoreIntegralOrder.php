@@ -39,7 +39,7 @@ use think\Model;
  * @property integer $is_del 是否删除
  * @property string $remark 管理员备注
  * @property integer $mer_id 商户ID
- * @property integer $is_mer_check 
+ * @property integer $is_mer_check
  * @property integer $is_remind 消息提醒
  * @property integer $is_system_del 后台是否删除
  * @property string $channel_type 用户访问端标识
@@ -66,5 +66,5 @@ class EbStoreIntegralOrder extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

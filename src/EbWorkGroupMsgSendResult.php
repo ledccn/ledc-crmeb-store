@@ -32,5 +32,5 @@ class EbWorkGroupMsgSendResult extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

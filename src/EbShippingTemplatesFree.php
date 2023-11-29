@@ -13,7 +13,7 @@ use think\Model;
  * @property string $number 包邮件数
  * @property string $price 包邮金额
  * @property integer $group 计费方式1按件数,2按重量, 3按体积
- * @property string $value 
+ * @property string $value
  * @property string $uniqid 分组唯一值
  */
 class EbShippingTemplatesFree extends Model
@@ -32,5 +32,5 @@ class EbShippingTemplatesFree extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -33,5 +33,5 @@ class EbSystemCity extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -30,5 +30,5 @@ class EbStoreProductCategoryBrand extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

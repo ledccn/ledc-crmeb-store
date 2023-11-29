@@ -1,0 +1,18 @@
+<?php
+
+namespace Ledc\CrmebStore;
+
+/**
+ * eb_user_brokerage_frozen 用户佣金冻结记录表
+ * @property integer $id (主键)
+ * @property integer $uid 用户uid
+ * @property string $price 金额
+ * @property integer $uill_id 关联id
+ * @property integer $frozen_time 冻结到期时间
+ * @property integer $status 是否有效
+ * @property integer $add_time 添加时间
+ * @property string $order_id 订单id
+ */
+trait HasEbUserBrokerageFrozen
+{
+}

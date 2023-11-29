@@ -41,5 +41,5 @@ class EbExpress extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

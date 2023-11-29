@@ -21,7 +21,7 @@ use think\Model;
  * @property integer $is_gift 是否是赠品1:是0:否
  * @property integer $is_support_refund 是否支持退款
  * @property string $old_cart_id 拆单前cart_id
- * @property integer $cart_num 数量	
+ * @property integer $cart_num 数量
  * @property integer $refund_num 退款数量
  * @property integer $surplus_num 核销剩余数量
  * @property integer $split_surplus_num 拆分剩余数量
@@ -54,5 +54,5 @@ class EbStoreOrderCartInfo extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

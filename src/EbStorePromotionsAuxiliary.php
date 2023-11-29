@@ -8,9 +8,9 @@ use think\Model;
  * eb_store_promotions_auxiliary 优惠活动辅助表
  * @property integer $id (主键)
  * @property integer $type 类型1：关联商品2：赠送优惠券3：赠送商品
- * @property integer $promotions_id 
+ * @property integer $promotions_id
  * @property integer $product_partake_type 参与商品类型：1:全部商品2：指定商品参与3：指定商品不参与4：指定品牌参与5：指定标签参与
- * @property integer $product_id 
+ * @property integer $product_id
  * @property integer $coupon_id 优惠券id
  * @property integer $brand_id 品牌id
  * @property integer $store_label_id 商品标签id
@@ -35,5 +35,5 @@ class EbStorePromotionsAuxiliary extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

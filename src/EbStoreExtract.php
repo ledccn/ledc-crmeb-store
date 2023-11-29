@@ -16,14 +16,14 @@ use think\Model;
  * @property string $wechat 微信号
  * @property string $qrcode_url 二维码地址
  * @property string $extract_price 提现金额
- * @property string $mark 
- * @property string $balance 
+ * @property string $mark
+ * @property string $balance
  * @property integer $status -1 未通过 0 审核中 1 已提现
  * @property integer $pay_status 0 未转账 1 已转账
  * @property string $store_mark 门店备注
  * @property integer $admin_id 管理员ID
  * @property string $fail_msg 无效原因
- * @property integer $fail_time 
+ * @property integer $fail_time
  * @property string $voucher_image 转账凭证
  * @property string $voucher_title 转账说明
  * @property integer $add_time 添加时间
@@ -44,5 +44,5 @@ class EbStoreExtract extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

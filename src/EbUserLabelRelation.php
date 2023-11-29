@@ -28,5 +28,5 @@ class EbUserLabelRelation extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

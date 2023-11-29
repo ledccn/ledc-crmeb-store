@@ -44,5 +44,5 @@ class EbWechatUser extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -30,5 +30,5 @@ class EbStoreBargainUserHelp extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

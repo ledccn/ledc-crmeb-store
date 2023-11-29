@@ -36,5 +36,5 @@ class EbUserLevel extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

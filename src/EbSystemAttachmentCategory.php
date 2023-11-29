@@ -30,5 +30,5 @@ class EbSystemAttachmentCategory extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

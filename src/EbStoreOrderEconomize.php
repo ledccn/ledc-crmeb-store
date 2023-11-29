@@ -34,5 +34,5 @@ class EbStoreOrderEconomize extends Model
      */
     protected $pk = 'uid';
 
-    
+
 }

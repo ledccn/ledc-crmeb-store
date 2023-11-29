@@ -31,5 +31,5 @@ class EbCityArea extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

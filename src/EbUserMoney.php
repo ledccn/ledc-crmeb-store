@@ -34,5 +34,5 @@ class EbUserMoney extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

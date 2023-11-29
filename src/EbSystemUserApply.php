@@ -37,5 +37,5 @@ class EbSystemUserApply extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

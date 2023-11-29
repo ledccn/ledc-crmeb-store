@@ -7,7 +7,7 @@ use think\Model;
 /**
  * eb_user_invoice 用户发票管理表
  * @property integer $id (主键)
- * @property integer $uid 
+ * @property integer $uid
  * @property integer $header_type 抬头类型1:个人2：企业
  * @property integer $type 发票类型1：普通2：专用
  * @property string $name 名称（发票抬头）
@@ -19,7 +19,7 @@ use think\Model;
  * @property string $bank 注册开户银行
  * @property string $card_number 银行卡号
  * @property integer $is_default 是否默认
- * @property integer $is_del 
+ * @property integer $is_del
  * @property integer $add_time
  */
 class EbUserInvoice extends Model
@@ -38,5 +38,5 @@ class EbUserInvoice extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

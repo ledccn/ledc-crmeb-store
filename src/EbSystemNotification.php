@@ -44,5 +44,5 @@ class EbSystemNotification extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

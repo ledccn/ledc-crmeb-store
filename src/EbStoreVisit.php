@@ -32,5 +32,5 @@ class EbStoreVisit extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

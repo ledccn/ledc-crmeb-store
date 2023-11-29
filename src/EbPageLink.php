@@ -33,5 +33,5 @@ class EbPageLink extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

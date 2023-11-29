@@ -36,5 +36,5 @@ class EbStoreServiceRecord extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

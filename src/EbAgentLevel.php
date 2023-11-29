@@ -32,5 +32,5 @@ class EbAgentLevel extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

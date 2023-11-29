@@ -25,8 +25,8 @@ use think\Model;
  * @property string $add_time 添加时间
  * @property integer $is_host 推荐
  * @property integer $is_show 商品状态
- * @property integer $is_del 
- * @property integer $combination 
+ * @property integer $is_del
+ * @property integer $combination
  * @property integer $mer_use 商户是否可用1可用0不可用
  * @property integer $is_postage 是否包邮1是0否
  * @property string $postage 邮费
@@ -71,5 +71,5 @@ class EbStoreCombination extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

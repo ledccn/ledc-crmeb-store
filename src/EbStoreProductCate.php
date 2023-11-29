@@ -29,5 +29,5 @@ class EbStoreProductCate extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

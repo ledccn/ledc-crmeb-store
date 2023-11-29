@@ -41,5 +41,5 @@ class EbVideo extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

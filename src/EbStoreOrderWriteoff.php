@@ -36,5 +36,5 @@ class EbStoreOrderWriteoff extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

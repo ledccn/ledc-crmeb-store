@@ -1,0 +1,14 @@
+<?php
+
+namespace Ledc\CrmebStore;
+
+/**
+ * eb_user_friends 用户好友关系
+ * @property integer $id (主键)
+ * @property integer $uid 用户uid
+ * @property integer $friends_uid 好友uid
+ * @property integer $add_time 添加时间
+ */
+trait HasEbUserFriends
+{
+}

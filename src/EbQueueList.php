@@ -19,7 +19,7 @@ use think\Model;
  * @property integer $finish_time 完成时间
  * @property integer $surplus_num 剩余未执行数量
  * @property integer $total_num  总数量
- * @property integer $is_del 
+ * @property integer $is_del
  * @property integer $add_time
  */
 class EbQueueList extends Model
@@ -38,5 +38,5 @@ class EbQueueList extends Model
      */
     protected $pk = 'status';
 
-    
+
 }

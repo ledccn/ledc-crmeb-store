@@ -28,5 +28,5 @@ class EbWorkChannelCycle extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

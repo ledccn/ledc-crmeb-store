@@ -45,5 +45,5 @@ class EbSystemMenus extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

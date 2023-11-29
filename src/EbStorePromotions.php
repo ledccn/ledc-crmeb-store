@@ -58,5 +58,5 @@ class EbStorePromotions extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

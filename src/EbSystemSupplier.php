@@ -49,5 +49,5 @@ class EbSystemSupplier extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

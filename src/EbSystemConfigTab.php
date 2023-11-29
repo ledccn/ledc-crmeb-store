@@ -33,5 +33,5 @@ class EbSystemConfigTab extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

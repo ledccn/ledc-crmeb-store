@@ -26,5 +26,5 @@ class EbWorkChannelLimit extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

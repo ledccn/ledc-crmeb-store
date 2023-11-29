@@ -9,7 +9,7 @@ use think\Model;
  * @property integer $id (主键)
  * @property integer $type 类型：0平台1:门店2:供应商
  * @property integer $relation_id 门店、供应商id
- * @property integer $uid 
+ * @property integer $uid
  * @property integer $praise 点赞数量
  * @property string $content 回复内容
  * @property integer $pid 上级回复id
@@ -33,5 +33,5 @@ class EbStoreProductReplyComment extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

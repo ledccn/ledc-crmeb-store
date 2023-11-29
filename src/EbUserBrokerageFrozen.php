@@ -31,5 +31,5 @@ class EbUserBrokerageFrozen extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

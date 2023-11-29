@@ -39,5 +39,5 @@ class EbSystemConfig extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

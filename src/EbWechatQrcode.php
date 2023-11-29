@@ -39,5 +39,5 @@ class EbWechatQrcode extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

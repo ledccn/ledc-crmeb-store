@@ -34,5 +34,5 @@ class EbSystemTimer extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

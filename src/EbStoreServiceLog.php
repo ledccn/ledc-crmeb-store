@@ -34,5 +34,5 @@ class EbStoreServiceLog extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

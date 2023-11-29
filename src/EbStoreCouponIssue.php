@@ -21,7 +21,7 @@ use think\Model;
  * @property integer $is_give_subscribe 是否首次关注赠送 0-否(默认) 1-是
  * @property integer $is_full_give 是否满赠0-否(默认) 1-是
  * @property string $full_reduction 消费满多少赠送优惠券
- * @property integer $is_del 
+ * @property integer $is_del
  * @property integer $add_time 优惠券添加时间
  * @property string $title 优惠券名称
  * @property integer $integral 兑换消耗积分值
@@ -53,5 +53,5 @@ class EbStoreCouponIssue extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

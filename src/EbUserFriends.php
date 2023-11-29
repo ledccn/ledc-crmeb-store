@@ -27,5 +27,5 @@ class EbUserFriends extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

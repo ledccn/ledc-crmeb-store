@@ -48,5 +48,5 @@ class EbStoreOrderRefund extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -40,5 +40,5 @@ class EbStoreCart extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

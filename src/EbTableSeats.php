@@ -27,5 +27,5 @@ class EbTableSeats extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

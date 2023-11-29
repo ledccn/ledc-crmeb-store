@@ -39,5 +39,5 @@ class EbLuckPrize extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

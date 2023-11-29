@@ -42,5 +42,5 @@ class EbArticle extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

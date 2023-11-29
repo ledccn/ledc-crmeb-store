@@ -20,7 +20,7 @@ use think\Model;
  * @property integer $status 客服状态，0隐藏1显示
  * @property integer $notify 订单通知1开启0关闭
  * @property integer $customer 是否展示统计管理
- * @property string $uniqid 
+ * @property string $uniqid
  * @property integer $is_del 是否删除
  */
 class EbStoreService extends Model
@@ -39,5 +39,5 @@ class EbStoreService extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

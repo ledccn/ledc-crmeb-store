@@ -32,5 +32,5 @@ class EbSmsRecord extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

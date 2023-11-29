@@ -11,7 +11,7 @@ use think\Model;
  * @property integer $type 0=订阅消息,1=微信模板消息
  * @property mixed $tempkey 模板编号
  * @property mixed $name 模板名
- * @property string $kid 
+ * @property string $kid
  * @property string $content 回复内容
  * @property string $example 模版示例
  * @property mixed $tempid 模板ID
@@ -34,5 +34,5 @@ class EbTemplateMessage extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -27,5 +27,5 @@ class EbCache extends Model
      */
     protected $pk = 'key';
 
-    
+
 }

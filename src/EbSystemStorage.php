@@ -36,5 +36,5 @@ class EbSystemStorage extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

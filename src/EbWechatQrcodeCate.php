@@ -27,5 +27,5 @@ class EbWechatQrcodeCate extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

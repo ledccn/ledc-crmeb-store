@@ -33,5 +33,5 @@ class EbDeliveryService extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

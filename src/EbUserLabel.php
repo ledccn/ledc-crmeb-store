@@ -29,5 +29,5 @@ class EbUserLabel extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -10,7 +10,7 @@ use think\Model;
  * @property string $account 后台管理员账号
  * @property integer $admin_type 管理员类型 1平台 2门店 4供应商
  * @property integer $relation_id 关联ID
- * @property string $head_pic 
+ * @property string $head_pic
  * @property string $pwd 后台管理员密码
  * @property string $real_name 后台管理员姓名
  * @property string $phone 用户电话
@@ -40,5 +40,5 @@ class EbSystemAdmin extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

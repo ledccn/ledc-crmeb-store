@@ -36,5 +36,5 @@ class EbTableQrcode extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

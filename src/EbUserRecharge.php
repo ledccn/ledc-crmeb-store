@@ -39,5 +39,5 @@ class EbUserRecharge extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

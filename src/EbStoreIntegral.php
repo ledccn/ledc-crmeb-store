@@ -27,7 +27,7 @@ use think\Model;
  * @property integer $num 最多积分几个
  * @property integer $quota 限购总数
  * @property integer $once_num 单次购买个数
- * @property integer $quota_show 
+ * @property integer $quota_show
  * @property string $delivery_type 物流类型
  * @property integer $freight 运费设置1：包邮，2：固定运费，3：运费模版
  * @property mixed $custom_form 自定义表单
@@ -54,5 +54,5 @@ class EbStoreIntegral extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

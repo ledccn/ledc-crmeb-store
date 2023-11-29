@@ -16,7 +16,7 @@ use think\Model;
  * @property integer $end_time 结束时间
  * @property mixed $time_id 时间段ID多个
  * @property integer $once_num 活动期间每人每日购买数量，0不限制
- * @property integer $num 全部活动期间，用户购买总数限制，0不限制	
+ * @property integer $num 全部活动期间，用户购买总数限制，0不限制
  * @property string $discount 优惠方式
  * @property integer $status 是否显示
  * @property integer $is_recommend 是否推荐
@@ -42,5 +42,5 @@ class EbStoreActivity extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -32,5 +32,5 @@ class EbOutAccount extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

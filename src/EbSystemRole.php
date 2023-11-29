@@ -12,7 +12,7 @@ use think\Model;
  * @property string $role_name 身份管理名称
  * @property mixed $rules 身份管理权限(menus_id)
  * @property mixed $cashier_rules 门店角色管理收银台权限(menus_id)
- * @property integer $level 
+ * @property integer $level
  * @property integer $status 状态
  */
 class EbSystemRole extends Model
@@ -31,5 +31,5 @@ class EbSystemRole extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

@@ -32,5 +32,5 @@ class EbMemberShip extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

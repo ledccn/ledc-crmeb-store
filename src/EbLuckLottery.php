@@ -49,5 +49,5 @@ class EbLuckLottery extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

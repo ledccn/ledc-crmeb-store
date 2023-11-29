@@ -26,7 +26,7 @@ use think\Model;
  * @property integer $live_status 直播状态101：直播中，102：未开始，103已结束，104禁播，105：暂停，106：异常，107：已过期
  * @property string $mark 备注
  * @property integer $replay_status 回放状态
- * @property integer $sort 
+ * @property integer $sort
  * @property integer $is_show 是否显示
  * @property integer $is_del 是否删除
  * @property integer $add_time 添加时间
@@ -47,5 +47,5 @@ class EbLiveRoom extends Model
      */
     protected $pk = 'phone';
 
-    
+
 }

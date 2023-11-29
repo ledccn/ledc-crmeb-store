@@ -39,5 +39,5 @@ class EbStoreProductLog extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

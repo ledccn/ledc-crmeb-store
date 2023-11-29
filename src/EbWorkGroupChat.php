@@ -17,10 +17,10 @@ use think\Model;
  * @property integer $member_num 群人数
  * @property integer $retreat_group_num 退群总数
  * @property integer $status 客户群跟进状态。
-0 - 跟进人正常
-1 - 跟进人离职
-2 - 离职继承中
-3 - 离职继承完成
+ * 0 - 跟进人正常
+ * 1 - 跟进人离职
+ * 2 - 离职继承中
+ * 3 - 离职继承完成
  * @property integer $create_time 创建时间
  * @property integer $update_time 更新时间
  */
@@ -40,5 +40,5 @@ class EbWorkGroupChat extends Model
      */
     protected $pk = 'id';
 
-    
+
 }

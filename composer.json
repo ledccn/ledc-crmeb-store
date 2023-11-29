@@ -1,0 +1,21 @@
+{
+  "name": "ledc/crmeb-store",
+  "type": "library",
+  "license": "MIT",
+  "description": "CRMEB-PRO-M v2.6.0 ThinkPHP model（含表字段注释）",
+  "autoload": {
+    "psr-4": {
+      "Ledc\\CrmebStore\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "david",
+      "email": "nz1985@qq.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "topthink/think-orm": "^2.0|^3.0"
+  }
+}

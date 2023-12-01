@@ -105,5 +105,26 @@ function method_params(ReflectionMethod $reflect): array
         $args[] = $row;
     }
 
-    return [$args, 'getDocComment' => $reflect->getDocComment()];
+    return [$args, 'getDocComment' => parse_comment($reflect->getDocComment())];
+}
+
+/**
+ * 解析注释
+ * @param false|string $comment
+ * @return array
+ */
+function parse_comment($comment): array
+{
+    if (empty($comment)) {
+        return [];
+    }
+
+    if (preg_match('#^/\*\*(.*)\*/#s', $comment, $comment) === false) {
+        return [];
+    }
+
+    if(preg_match_all('#^\s*\*(.*)#m', $comment, $lines) === false) {
+        return [];
+    }
+    return $lines;
 }

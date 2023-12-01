@@ -95,7 +95,7 @@ function method_params(ReflectionMethod $reflect): array
         $reflectionType = $param->getType();
         $row = [
             //类型
-            'type' => ($reflectionType && $reflectionType->isBuiltin() === false) ? $reflectionType->getName() : '',
+            'type' => $reflectionType ? $reflectionType->getName() : '',
             //名字
             'name' => $param->getName(),
             //默认值

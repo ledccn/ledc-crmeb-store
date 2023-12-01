@@ -84,6 +84,7 @@ function class_info($class): array
  * 获取方法的所有参数
  * @param ReflectionMethod $reflect
  * @return array
+ * @throws ReflectionException
  */
 function method_params(ReflectionMethod $reflect): array
 {
@@ -101,7 +102,7 @@ function method_params(ReflectionMethod $reflect): array
             //名字
             'name' => $param->getName(),
             //默认值
-            'default' => $param->isDefaultValueAvailable() ? $param->getDefaultValue() : '',
+            'default' => $param->isDefaultValueAvailable() ? $param->getDefaultValue() : ($param->isOptional() ? $param->getDefaultValue() : ''),
             //值是否允许null
             'allowsNull' => $reflectionType && $reflectionType->allowsNull(),
             //是否为基础类型
@@ -117,6 +118,7 @@ function method_params(ReflectionMethod $reflect): array
  * 获取函数的所有参数
  * @param ReflectionFunction $reflect
  * @return array
+ * @throws ReflectionException
  */
 function function_params(ReflectionFunction $reflect): array
 {
@@ -134,7 +136,7 @@ function function_params(ReflectionFunction $reflect): array
             //名字
             'name' => $param->getName(),
             //默认值
-            'default' => $param->isDefaultValueAvailable() ? $param->getDefaultValue() : '',
+            'default' => $param->isDefaultValueAvailable() ? $param->getDefaultValue() : ($param->isOptional() ? $param->getDefaultValue() : ''),
             //是否为基础类型
             'isBuiltin' => $reflectionType && $reflectionType->isBuiltin(),
             //值是否允许null

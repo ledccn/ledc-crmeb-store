@@ -119,10 +119,11 @@ function parse_comment($comment): array
         return [];
     }
 
-    if (preg_match('#^/\*\*(.*)\*/#s', $comment, $comment) === false) {
+    if (preg_match('#^/\*\*(.*)\*/#s', $comment, $matches) === false) {
         return [];
     }
 
+    $comment = trim($matches[1]);
     if(preg_match_all('#^\s*\*(.*)#m', $comment, $lines) === false) {
         return [];
     }

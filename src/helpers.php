@@ -7,9 +7,10 @@ namespace Ledc\CrmebStore;
 
 use Error;
 use Exception;
+use Reflection;
 use ReflectionClass;
 use ReflectionException;
-use ReflectionFunctionAbstract;
+use ReflectionMethod;
 use RuntimeException;
 use Throwable;
 
@@ -21,15 +22,56 @@ use Throwable;
 function class_info($class): array
 {
     try {
+        $rs = [];
         $reflect = new ReflectionClass($class);
-        $constructor = $reflect->getConstructor();
-        $rs = [
-            'constructor' => method_params($constructor),
-        ];
-        foreach (get_class_methods($class) as $item) {
-            $method = $reflect->getMethod($item);
-            $rs[$item] = method_params($method);
+        // 静态分析：默认属性
+        $rs['getDefaultProperties'] = $reflect->getDefaultProperties();
+
+        // 静态分析：方法和参数
+        $methods = [];
+        foreach ($reflect->getMethods() as $reflectionMethod) {
+            $method = $reflectionMethod->getName();
+            $methods[$method] = method_params($reflectionMethod);
         }
+        $rs['getMethods'] = $methods;
+
+        // 静态分析：属性
+        $props = $reflect->getProperties();
+        $properties = [];
+        foreach ($props as $prop) {
+            $reflectionType = $prop->getType();
+            $row = [
+                //实际类型
+                'type' => $reflectionType ? $reflectionType->getName() : '',
+                //注释的类型
+                'comment_type' => (function () use ($prop) {
+                    if ($comment = $prop->getDocComment()) {
+                        if (preg_match('/@var\s+([^\s]+)/', $comment, $matches)) {
+                            return $matches[1];
+                        }
+                    }
+                    return '';
+                })(),
+                //名字
+                'name' => $prop->getName(),
+                //注释
+                'getDocComment' => $prop->getDocComment(),
+                //修饰符
+                'getModifiers' => implode(' ', Reflection::getModifierNames($prop->getModifiers())),
+                //是否静态类型
+                'isStatic' => $prop->isStatic(),
+                //是否基础类型
+                'isBuiltin' => $reflectionType && $reflectionType->isBuiltin(),
+                //有类型
+                'hasType' => $prop->hasType(),
+                //是否有默认值
+                'isDefault' => $prop->isDefault(),
+                //允许null
+                'allowsNull' => $reflectionType ? $reflectionType->allowsNull() : '',
+            ];
+            $properties[] = $row;
+        }
+        $rs['getProperties'] = $properties;
         return $rs;
     } catch (ReflectionException|Exception|Error|Throwable $e) {
         throw new RuntimeException($e->getMessage());
@@ -38,10 +80,10 @@ function class_info($class): array
 
 /**
  * 获取方法的所有参数
- * @param ReflectionFunctionAbstract $reflect
+ * @param ReflectionMethod $reflect
  * @return array
  */
-function method_params(ReflectionFunctionAbstract $reflect): array
+function method_params(ReflectionMethod $reflect): array
 {
     if ($reflect->getNumberOfParameters() == 0) {
         return [];
@@ -57,7 +99,7 @@ function method_params(ReflectionFunctionAbstract $reflect): array
             //名字
             'name' => $param->getName(),
             //默认值
-            'default' => ($param->isDefaultValueAvailable() ? $param->getDefaultValue() : '无')
+            'default' => $param->isDefaultValueAvailable() ? $param->getDefaultValue() : ''
         ];
         $args[] = $row;
     }

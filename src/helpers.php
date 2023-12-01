@@ -32,7 +32,7 @@ function class_info($class): array
         foreach ($reflect->getMethods() as $reflectionMethod) {
             $modifiers = implode(' ', Reflection::getModifierNames($reflectionMethod->getModifiers()));
             $method = $reflectionMethod->getName();
-            $methods[$modifiers . ' ' . $method] = method_params($reflectionMethod);
+            $methods[$modifiers . ' function ' . $method] = method_params($reflectionMethod);
         }
         $rs['getMethods'] = $methods;
 

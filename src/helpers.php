@@ -103,6 +103,8 @@ function method_params(ReflectionMethod $reflect): array
             'name' => $param->getName(),
             //默认值
             'default' => $param->isDefaultValueAvailable() ? $param->getDefaultValue() : ($param->isOptional() ? $param->getDefaultValue() : ''),
+            //是否为可选参数
+            'isOptional' => $param->isOptional(),
             //值是否允许null
             'allowsNull' => $reflectionType && $reflectionType->allowsNull(),
             //是否为基础类型
@@ -137,6 +139,8 @@ function function_params(ReflectionFunction $reflect): array
             'name' => $param->getName(),
             //默认值
             'default' => $param->isDefaultValueAvailable() ? $param->getDefaultValue() : ($param->isOptional() ? $param->getDefaultValue() : ''),
+            //是否为可选参数
+            'isOptional' => $param->isOptional(),
             //是否为基础类型
             'isBuiltin' => $reflectionType && $reflectionType->isBuiltin(),
             //值是否允许null

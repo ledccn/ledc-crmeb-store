@@ -56,7 +56,7 @@ function class_info($class): array
                 //名字
                 'name' => $prop->getName(),
                 //注释
-                'getDocComment' => $prop->getDocComment(),
+                'getDocComment' => parse_comment($prop->getDocComment()),
                 //修饰符
                 'getModifiers' => implode(' ', Reflection::getModifierNames($prop->getModifiers())),
                 //是否静态类型
@@ -105,7 +105,7 @@ function method_params(ReflectionMethod $reflect): array
         $args[] = $row;
     }
 
-    return [$args, 'getDocComment' => parse_comment($reflect->getDocComment())];
+    return ['params' => $args, 'getDocComment' => parse_comment($reflect->getDocComment())];
 }
 
 /**

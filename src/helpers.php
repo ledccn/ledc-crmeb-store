@@ -30,8 +30,9 @@ function class_info($class): array
         // 静态分析：方法和参数
         $methods = [];
         foreach ($reflect->getMethods() as $reflectionMethod) {
+            $modifiers = implode(' ', Reflection::getModifierNames($reflect->getModifiers()));
             $method = $reflectionMethod->getName();
-            $methods[$method] = method_params($reflectionMethod);
+            $methods[$modifiers . $method] = method_params($reflectionMethod);
         }
         $rs['getMethods'] = $methods;
 
@@ -88,9 +89,9 @@ function method_params(ReflectionMethod $reflect): array
     if ($reflect->getNumberOfParameters() == 0) {
         return [];
     }
-    $params = $reflect->getParameters();
-    $args = [];
 
+    $args = [];
+    $params = $reflect->getParameters();
     foreach ($params as $param) {
         $reflectionType = $param->getType();
         $row = [

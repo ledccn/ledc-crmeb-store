@@ -124,8 +124,10 @@ function parse_comment($comment): array
     }
 
     $comment = trim($matches[1]);
-    if(preg_match_all('#^\s*\*(.*)#m', $comment, $lines) === false) {
+    if (preg_match_all('#^\s*\*(.*)#m', $comment, $lines) === false) {
         return [];
     }
-    return $lines[1];
+    return array_map(function ($v) {
+        return trim($v);
+    }, $lines[1]);
 }

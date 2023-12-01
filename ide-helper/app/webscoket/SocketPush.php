@@ -54,18 +54,6 @@ class SocketPush
     {
     }
 
-    public function to($to): self
-    {
-    }
-
-    public function notTo($notTo): self
-    {
-    }
-
-    public function setUserType(string $userType): self
-    {
-    }
-
     public static function user(): self
     {
     }
@@ -79,6 +67,18 @@ class SocketPush
     }
 
     public static function store(): self
+    {
+    }
+
+    public function to($to): self
+    {
+    }
+
+    public function notTo($notTo): self
+    {
+    }
+
+    public function setUserType(string $userType): self
     {
     }
 

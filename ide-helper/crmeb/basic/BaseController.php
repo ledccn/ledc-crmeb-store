@@ -43,20 +43,20 @@ class BaseController
     }
 
     /**
-     * 子类初始化函数
-     * @return void
-     */
-    protected function initialize()
-    {
-    }
-
-    /**
      * 在对象中调用一个不可访问方法时，__call() 会被调用
      * @param string $name
      * @param array $arguments
      * @return void
      */
     public function __call(string $name, array $arguments)
+    {
+    }
+
+    /**
+     * 子类初始化函数
+     * @return void
+     */
+    protected function initialize()
     {
     }
 }

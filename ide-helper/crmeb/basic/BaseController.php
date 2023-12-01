@@ -7,6 +7,8 @@ use think\facade\App;
 
 /**
  * 基础控制器
+ * @method \think\response\Json success($message = '', array $data = []) 成功响应
+ * @method \think\response\Json fail($message = '', array $data = []) 失败响应
  */
 class BaseController
 {

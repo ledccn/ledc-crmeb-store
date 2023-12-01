@@ -127,5 +127,5 @@ function parse_comment($comment): array
     if(preg_match_all('#^\s*\*(.*)#m', $comment, $lines) === false) {
         return [];
     }
-    return $lines;
+    return $lines[1];
 }

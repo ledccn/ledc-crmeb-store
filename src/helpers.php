@@ -100,10 +100,10 @@ function method_params(ReflectionMethod $reflect): array
             //名字
             'name' => $param->getName(),
             //默认值
-            'default' => $param->isDefaultValueAvailable() ? $param->getDefaultValue() : ''
+            'default' => $param->isDefaultValueAvailable() ? $param->getDefaultValue() : '',
         ];
         $args[] = $row;
     }
 
-    return $args;
+    return [$args, 'getDocComment' => $reflect->getDocComment()];
 }

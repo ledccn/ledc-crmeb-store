@@ -67,7 +67,7 @@ function class_info($class): array
                 //是否有默认值
                 'isDefault' => $prop->isDefault(),
                 //允许null
-                'allowsNull' => $reflectionType ? $reflectionType->allowsNull() : '',
+                'allowsNull' => $reflectionType && $reflectionType->allowsNull(),
             ];
             $properties[] = $row;
         }

@@ -10,6 +10,7 @@ use Exception;
 use Reflection;
 use ReflectionClass;
 use ReflectionException;
+use ReflectionFunction;
 use ReflectionMethod;
 use RuntimeException;
 use Throwable;
@@ -101,6 +102,43 @@ function method_params(ReflectionMethod $reflect): array
             'name' => $param->getName(),
             //默认值
             'default' => $param->isDefaultValueAvailable() ? $param->getDefaultValue() : '',
+            //值是否允许null
+            'allowsNull' => $reflectionType && $reflectionType->allowsNull(),
+            //是否为基础类型
+            'isBuiltin' => $reflectionType && $reflectionType->isBuiltin(),
+        ];
+        $args[] = $row;
+    }
+
+    return ['params' => $args, 'getDocComment' => parse_comment($reflect->getDocComment())];
+}
+
+/**
+ * 获取函数的所有参数
+ * @param ReflectionFunction $reflect
+ * @return array
+ */
+function function_params(ReflectionFunction $reflect): array
+{
+    if ($reflect->getNumberOfParameters() == 0) {
+        return [];
+    }
+
+    $args = [];
+    $params = $reflect->getParameters();
+    foreach ($params as $param) {
+        $reflectionType = $param->getType();
+        $row = [
+            //类型
+            'type' => $reflectionType ? $reflectionType->getName() : '',
+            //名字
+            'name' => $param->getName(),
+            //默认值
+            'default' => $param->isDefaultValueAvailable() ? $param->getDefaultValue() : '',
+            //是否为基础类型
+            'isBuiltin' => $reflectionType && $reflectionType->isBuiltin(),
+            //值是否允许null
+            'allowsNull' => $reflectionType && $reflectionType->allowsNull(),
         ];
         $args[] = $row;
     }

@@ -6,7 +6,10 @@
   "autoload": {
     "psr-4": {
       "Ledc\\CrmebStore\\": "src/"
-    }
+    },
+    "files": [
+      "src/helpers.php"
+    ]
   },
   "authors": [
     {

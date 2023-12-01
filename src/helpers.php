@@ -60,13 +60,13 @@ function class_info($class): array
                 'getModifiers' => implode(' ', Reflection::getModifierNames($prop->getModifiers())),
                 //是否静态类型
                 'isStatic' => $prop->isStatic(),
-                //是否基础类型
-                'isBuiltin' => $reflectionType && $reflectionType->isBuiltin(),
                 //有类型
                 'hasType' => $prop->hasType(),
-                //是否有默认值
+                //是否为默认属性
                 'isDefault' => $prop->isDefault(),
-                //允许null
+                //是否为基础类型
+                'isBuiltin' => $reflectionType && $reflectionType->isBuiltin(),
+                //值是否允许null
                 'allowsNull' => $reflectionType && $reflectionType->allowsNull(),
             ];
             $properties[] = $row;

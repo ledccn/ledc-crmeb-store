@@ -87,6 +87,8 @@ use think\Model;
  * @property mixed $give_coupon 优惠活动赠送优惠券
  * @property integer $erp_id ERP内部单号
  * @property string $erp_order_id ERP订单ID
+ * @property string $express_name 物流名称
+ * @property string $express_phone 物流电话
  */
 class EbStoreOrder extends Model
 {

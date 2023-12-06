@@ -22,6 +22,8 @@ use think\Model;
  * @property integer $is_default 是否默认
  * @property integer $is_del 是否删除
  * @property integer $add_time 添加时间
+ * @property string $express_name 物流名称
+ * @property string $express_phone 物流电话
  */
 class EbUserAddress extends Model
 {
@@ -38,6 +40,4 @@ class EbUserAddress extends Model
      * @var string
      */
     protected $pk = 'id';
-
-
 }
